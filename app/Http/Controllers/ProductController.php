@@ -44,7 +44,7 @@ class ProductController extends Controller
         if($productCreate){
             return redirect('products')->with('message', 'Produto criado com sucesso.');   
         }
-        return redirect()->back()->with('message', 'Erro ao criar produto.');   
+        return redirect('products')->with('message', 'Erro ao criar produto.');   
     }
 
     public function show(string $id)

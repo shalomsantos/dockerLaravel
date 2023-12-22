@@ -12,6 +12,8 @@ class HomeController extends Controller
     
     public function index(){
         $products = $this->service->all();
-        return view('home', ['products' => $products]);
+        $count = $this->service->count();
+
+        return view('home', ['products' => $products, 'count' => $count]);
     }
 }

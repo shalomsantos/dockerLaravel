@@ -15,6 +15,9 @@ class ProductService{
     public function all(string $filter = null): Collection{
         return $this->repository->all($filter);
     }
+    public function count(): int | null{
+        return $this->repository->count();
+    }
 
     public function findByName(string $nome = null): Collection{
         return $this->repository->findByName($nome);

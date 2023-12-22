@@ -16,8 +16,16 @@ class UserController extends Controller
 
     public function index()
     {
-        $users = $this->user->all();
-        return view('/usuario/users', ['users' => $users]);
+        $search = request('search');
+
+        if($search){
+            $users = $this->user->query()->where([['nome', 'like', '%'.$search.'%']])->get();
+            echo 'pesquisou';
+        }else{
+            $users = $this->user->all();
+        }
+
+        return view('/usuario/users', ['users' => $users, 'search' => $search]);
     }
 
     public function create()
@@ -28,16 +36,16 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $userCreate = $this->user->create([
-            'name' => $request->input('name'),
+            'nome' => $request->input('nome'),
             'email' => $request->input('email'),
-            'password' => $request->input('password')
-            // 'password' => password_hash($request->input('password'), PASSWORD_DEFAULT),
+            'telefone' => $request->input('telefone'),
+            'senha' => $request->input('senha')
         ]);
         
         if($userCreate){
-            return redirect()->back()->with('message', 'successfully created');
+            return redirect('users')->with('message', 'successfully created');
         }
-        return redirect()->back()->with('message', 'error created');   
+        return redirect('users')->with('message', 'error created');   
     }
 
     public function show($user)
@@ -54,15 +62,15 @@ class UserController extends Controller
     }
 
     public function update(Request $request, string $id)
-    {
+    {   
         $user = $this->user->find($id);
 
         $updated = $user->where('id', $id)->update($request->except(['_token', '_method']));
 
         if($updated){
-            return redirect()->back()->with('message', 'successfully updated');
+            return redirect()->route('users.index')->with('message', 'successfully updated');
         }
-        return redirect()->back()->with('message', 'successfully updated');
+        return redirect()->route('users.index')->with('message', 'successfully updated');
     }
     
     public function destroy(string $id)

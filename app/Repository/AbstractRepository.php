@@ -14,6 +14,10 @@ abstract class AbstractRepository implements RepositoryInterface
     public static function all():Collection{
         return self::loadModel()::all();
     }
+    
+    public static function count(): int | null{
+        return self::loadModel()::query()->count('id');
+    }
 
     public static function new(array $attibutes): Model | null{
         return self::loadModel()::query()->create($attibutes);

@@ -17,6 +17,7 @@ interface RepositoryInterface{
     // LOADMODEL?
     public static function new(array $attributes): Model | null;
     public static function all(): Collection;
+    public static function count(): int | null;
     public static function updater(Request $request, int $id): bool;
     public static function excluir(int $id): bool;
     public static function findById(int $id): Model | null;

@@ -3,7 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
     <script type="text/javascript" src="/js/script.js" defer></script>
+    {{-- SWIPER --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    {{-- JQUERY --}}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
@@ -11,33 +17,31 @@
     <script src="https://kit.fontawesome.com/c3cffe3b5e.js" crossorigin="anonymous" defer></script>
     <title>.:=Laravel=:.</title>
 </head>
-<body>
-    <nav class="navbar fixed-top bg-dark navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
-        <div class="d-flex justify-content-between align-items-center w-75 mx-auto">
-            <a class="navbar-brand" href="#">Shalom santos</a>
-            <div class="navbar" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+<body style="padding-top: 4.5rem">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url('/')}}">~Shalom Santos~</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/')}}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{ url('/')}}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tabelas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ url('/users')}}">Usuários</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/products')}}">Produtos</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/users')}}">Usuários</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/products')}}">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/about')}}">Sobre</a>
+                        <a class="nav-link" href="{{ url('/about') }}">About</a>
                     </li>
                 </ul>
-            </div>
-            <div class="d-flex gap-4">
-                <a class="nav-link link-light" href="{{ url('/login')}}">
-                    <i class="fa-solid fa-right-to-bracket me-2"></i>Login
-                </a>
-                <a class="nav-link link-light" href="{{ url('/car-shop')}}">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
             </div>
         </div>
     </nav>

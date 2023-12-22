@@ -6,7 +6,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Status</h5>
+                        <h5 class="modal-title">Status:.</h5>
                         <button type="button" class="btn-close" onclick="modalClose()"></button>
                     </div>
                     <div class="modal-body">
@@ -19,15 +19,12 @@
             </div>
         </div>
     @endif
-    <div class="container py-4">
+    <div class="container py-3">
         <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between">
-                <h4>Produtos</h4>
+                <h4><span class="badge text-bg-dark">Produtos</span></h4>
                 <div class="d-flex gap-2">
-                    <a href="{{ route('products.create') }}" class="btn btn-primary btn-sm">
-                        <i class="fa-solid fa-plus"></i>
-                        New Product
-                    </a>
+                    <a href="{{ route('products.create') }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus me-2"></i>Novo produto</a>
                     <form action="{{ route('products.index') }}" method="GET" class="d-flex gap-2">
                         @csrf
                         <input type="text" class="form-control form-control-sm" placeholder="pesquisar:." name="search">
