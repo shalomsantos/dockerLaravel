@@ -1,12 +1,12 @@
-# Docker, Laravel 10, bootstrap
+# Laravel 10, Docker, bootstrap
 
 ## Passo a passo para rodar o projeto
 Clone o projeto
 ```sh
-git clone https://github.com/especializati/curso-de-laravel-10.git laravel-10
+git clone https://github.com/shalomsantos/dockerLaravel.git
 ```
 ```sh
-cd laravel-10/
+cd dockerLaravel/
 ```
 
 
@@ -23,10 +23,10 @@ APP_URL=http://localhost:8989
 
 DB_CONNECTION=mysql
 DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=nome_que_desejar_db
-DB_USERNAME=nome_usuario
-DB_PASSWORD=senha_aqui
+DB_PORT=mysql
+DB_DATABASE=mysql
+DB_USERNAME=mysql
+DB_PASSWORD=mysql
 
 CACHE_DRIVER=redis
 QUEUE_CONNECTION=redis
