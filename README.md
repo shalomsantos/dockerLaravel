@@ -1,5 +1,9 @@
 # Laravel 10, Docker, bootstrap
 
+## Screenshots
+
+![App Screenshot](/assets/print.png)
+
 ## Passo a passo para rodar o projeto
 Clone o projeto
 ```sh
