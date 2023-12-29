@@ -1,8 +1,19 @@
 # Laravel 10, Docker, bootstrap
 
 ## Screenshots
+### Telas - Home
 
 ![App Screenshot](./public/assets/print.png)
+
+### Telas - Tabelas
+
+![App Screenshot](./public/assets/print1.png)
+![App Screenshot](./public/assets/print2.png)
+
+### Telas - telas de crud novo ususario ou produto
+
+![App Screenshot](./public/assets/print4.png)
+![App Screenshot](./public/assets/print5.png)
 
 ## Passo a passo para rodar o projeto
 Clone o projeto
