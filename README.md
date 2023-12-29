@@ -2,7 +2,7 @@
 
 ## Screenshots
 
-![App Screenshot](/assets/print.png)
+![App Screenshot](./public/assets/print.png)
 
 ## Passo a passo para rodar o projeto
 Clone o projeto
