@@ -17,7 +17,7 @@ body {
 }
 .carousel::before{
   content: "";
-  width: 150vw;
+  width: 120%;
   height: 90vh;
 
   position: absolute;

@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/c3cffe3b5e.js" crossorigin="anonymous" defer></script>
     <title>.:=Laravel=:.</title>
 </head>
-<body style="padding-top: 4.5rem">
+<body style="padding-top: 4.5rem;">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url('/')}}">~Shalom Pereira dos Santos~</a>
@@ -39,7 +39,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/about') }}">About</a>
+                        <a class="nav-link" href="{{ url('/about') }}">Sobre</a>
                     </li>
                 </ul>
             </div>

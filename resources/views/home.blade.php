@@ -2,7 +2,7 @@
 
 @section('content')
     <main class="container py-3">
-        <div id="carouselExampleIndicators" class="carousel slide py-5">
+        <div id="carouselExampleIndicators" class="carousel slide py-5 mx-0 px-0">
             <div id="carousel-indicators" class="carousel-indicators">
                 @for ($i = 0; $i < $count; $i++)
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $i }}"></button>
