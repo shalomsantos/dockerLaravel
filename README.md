@@ -1,20 +1,5 @@
 # Laravel 10, Docker, bootstrap
 
-## Screenshots
-### Telas - Home
-
-![App Screenshot](./public/assets/print.png)
-
-### Telas - Tabelas
-
-![App Screenshot](./public/assets/print1.png)
-![App Screenshot](./public/assets/print2.png)
-
-### Telas - telas de crud novo ususario ou produto
-
-![App Screenshot](./public/assets/print4.png)
-![App Screenshot](./public/assets/print5.png)
-
 ## Passo a passo para rodar o projeto
 Clone o projeto
 ```sh
@@ -77,5 +62,16 @@ php artisan key:generate
 ```
 
 
+Incluir novo produto
+- Adicione itens na path: ./public/assets/item. jpg, png, jpeg...
+- Dentro do input de path do produto: "/assets/item.png" para linkar a imagem desejada
+
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
+
+
+## Screenshots
+### Telas - Home
+![App Screenshot](./public/assets/print.png)
+
+
