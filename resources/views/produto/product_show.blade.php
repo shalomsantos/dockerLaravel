@@ -11,17 +11,17 @@
             </div>
             <div class="card-body">
                 <div class="card-body">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control disabled" value="{{ $product->nome }}">
-                        <span class="input-group-text" id="basic-addon1">Nome</span>
+                    <div class="mb-3">
+                        <label class="form-label">Nome:</label>
+                        <input type="text" class="form-control form-control-sm disabled" value="{{ $product->nome }}">
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control disabled" value="{{ $product->categoria }}">
-                        <span class="input-group-text" id="basic-addon1">Categoria</span>
+                    <div class="mb-3">
+                        <label class="form-label">Categoria:</label>
+                        <input type="text" class="form-control form-control-sm disabled" value="{{ $product->categoria }}">
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control disabled" value="{{ $product->valor }}">
-                        <span class="input-group-text" id="basic-addon1">Valor</span>
+                    <div class="mb-3">
+                        <label class="form-label">Valor:</label>
+                        <input type="text" class="form-control form-control-sm disabled" value="{{ $product->valor }}">
                     </div>
                     <button type="submit" class="btn btn-danger">Deletar</button>
                 </div>

@@ -23,8 +23,8 @@ class ProductService{
         return $this->repository->findByName($nome);
     }
 
-    public function new(array $attibutes = []){
-        return $this->repository->new($attibutes);
+    public function new(array $attributes = []){
+        return $this->repository->new($attributes);
     }
 
     public function findById(int $id = null): Model | null{

@@ -11,9 +11,22 @@ if(document.getElementById('carousel') !== null){
   activeCarouselIndicators.classList.add('active');
 }
 
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 5,
-  direction: getDirection(),
+let swiper = new Swiper('.swiper', {  
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  },
+  direction: 'horizontal',
   navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

@@ -18,13 +18,13 @@
     <title>.:=Laravel=:.</title>
 </head>
 <body style="padding-top: 4.5rem;">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url('/')}}">~Shalom Pereira dos Santos~</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ url('/')}}">Home</a>
@@ -44,11 +44,13 @@
                 </ul>
             </div>
         </div>
-    </nav>
+      </nav>
     
-    <section class="position-relative">
-        @yield('content')
-    </section>
+    <main>
+        <section class="position-relative">
+            @yield('content')
+        </section>
+    </main>
 
     <footer class="container pt-5">
         <div class="row">
