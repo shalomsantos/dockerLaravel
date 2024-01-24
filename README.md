@@ -69,7 +69,6 @@ Incluir novo produto
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
 
-
 ## Screenshots
 ### Telas - Home
 ![App Screenshot](./public/assets/print.png)
