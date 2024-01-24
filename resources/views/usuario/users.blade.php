@@ -19,10 +19,10 @@
             </div>
         </div>
     @endif
-    <div class="container py-3">
+    <div class="container py-3 table-responsive-lg">
         <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between">
-                <h4><span class="badge text-bg-dark">Usuários</span></h4>
+                <h4 class="d-none d-md-block"><span class="badge text-bg-dark">Usuários</span></h4>
                 <div class="d-flex gap-2">
                     <a href="{{ route('users.create') }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus me-2"></i>Novo usuário</a>
                     <form action="{{ route('users.index') }}" method="GET" class="d-flex gap-2">
@@ -33,24 +33,24 @@
                 </div>
             </div>
             <div class="card-body">
-                <table class="table table-striped">
+                <table class="table table-striped mb-0">
                     <thead>
                         <tr>
                             <th scope="col">Nome</th>
                             <th scope="col">Email</th>
                             <th scope="col">Telefone</th>
                             <th scope="col">Senha</th>
-                            <th scope="col">actions</th>
+                            <th scope="col">...</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($users as $user)
                             <tr>
-                                <td> {{ $user->nome }}</td>
-                                <td> {{ $user->email }}</td>
-                                <td> {{ $user->telefone }}</td>
-                                <td> {{ $user->senha }} </td>
-                                <td>
+                                <td class="text-break"> {{ $user->nome }}</td>
+                                <td class="text-break"> {{ $user->email }}</td>
+                                <td class="text-break"> {{ $user->telefone }}</td>
+                                <td class="text-break"> {{ $user->senha }} </td>
+                                <td class="text-break">
                                     <a href="{{ route('users.edit', ['user' => $user->id]) }}" class="btn btn-primary btn-sm">
                                         <i class="fa-solid fa-pen"></i>
                                     </a>

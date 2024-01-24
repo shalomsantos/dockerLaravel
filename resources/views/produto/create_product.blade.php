@@ -3,7 +3,7 @@
 @section('content')
     <div class="container py-4">
         <form action="{{ route('products.store') }}" method="post" class="card col-9 mx-auto">
-            <div class="card-header">Products</div>
+            <div class="card-header">Novo produto:.</div>
             <div class="card-body">
                 @csrf
                 <div class="row p-3">
@@ -28,8 +28,8 @@
                         <label class="form-label text-main mb-1 text-body-tertiary">Valor:.</label>
                         <input type="number" class="form-control form-control-sm" name="valor">
                     </div>
-                    <div class="col-4 d-flex align-items-center">
-                        <button type="submit" class="btn btn-primary btn-sm">New product</button>
+                    <div class="col-12 d-flex align-items-center">
+                        <button type="submit" class="btn btn-primary btn-sm">Novo produto</button>
                     </div>
                 </div>
             </div>

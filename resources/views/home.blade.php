@@ -12,16 +12,20 @@
                 <div class="carousel-item">
                     <div class="row p-3">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="{{ $product->path }}" alt="" width="400" height="300">
+                            <div class="cotainer">
+                                <img src="{{ $product->path }}" alt="" width="400" height="300">
+                            </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center">
-                            <h1>{{ $product->nome }}</h1>
-                            <p class="card-text fs-6 text-danger text-decoration-line-through mb-0 pb-0">R$ {{ $product->valor + 50 }},00</p>
-                            <p class="card-text fs-4 text-success fw-bold mb-0 pb-0">R$ {{ $product->valor }}</p>
-                            <p class="text-body-secondary">À vista no pix.</p>
-                            <div>
-                                <a class="btn btn-primary">Comprar</a>
-                                <a class="btn btn-success">carrinho</a>
+                            <div class="container">
+                                <h1>{{ $product->nome }}</h1>
+                                <p class="card-text fs-6 text-danger text-decoration-line-through mb-0 pb-0">R$ {{ $product->valor + 50 }},00</p>
+                                <p class="card-text fs-4 text-success fw-bold mb-0 pb-0">R$ {{ $product->valor }}</p>
+                                <p class="text-body-secondary">À vista no pix.</p>
+                                <div>
+                                    <a class="btn btn-primary">Comprar</a>
+                                    <a class="btn btn-success"><i class="fa-solid fa-basket-shopping"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -37,10 +41,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <main class="container py-3">
-        
+    <div class="container py-3">
         <div class="swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" style="height: 100 !important;">
                 @foreach ($products as $product)
                     <div class="swiper-slide">
                         <div class="card m-2 p-3" style="height: 400px;">
@@ -53,7 +56,7 @@
                                     <p class="text-body-secondary">À vista no pix.</p>
                                     <div>
                                         <a class="btn btn-primary btn-sm">Comprar</a>
-                                        <a class="btn btn-success btn-sm">carrinho</a>
+                                        <a class="btn btn-success btn-sm"><i class="fa-solid fa-basket-shopping"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -64,5 +67,6 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </main>
+    </div>
+
 @endsection

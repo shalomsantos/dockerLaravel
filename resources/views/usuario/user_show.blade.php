@@ -10,21 +10,19 @@
                 <span class="badge rounded-pill text-bg-secondary">{{ $user->id }}</span>
             </div>
             <div class="card-body">
-                <div class="card-body">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email:.</label>
-                        <p class="card-title fw-bold">{{ $user->email }}</p>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Telefone:.</label>
-                        <p class="card-title fw-bold">{{ $user->telefone }}</p>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Senha:.</label>
-                        <p class="card-title fw-bold">{{ $user->senha }}</p>
-                    </div>
-                    <button type="submit" class="btn btn-danger btn-sm">Deletar</button>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email:.</label>
+                    <p class="card-title fw-bold">{{ $user->email }}</p>
                 </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefone:.</label>
+                    <p class="card-title fw-bold">{{ $user->telefone }}</p>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Senha:.</label>
+                    <p class="card-title fw-bold">{{ $user->senha }}</p>
+                </div>
+                <button type="submit" class="btn btn-danger btn-sm">Deletar</button>
             </div>
         </form>
     </div>

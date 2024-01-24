@@ -22,7 +22,7 @@
     <div class="container py-3">
         <div class="card">
             <div class="card-header d-flex align-items-center justify-content-between">
-                <h4><span class="badge text-bg-dark">Produtos</span></h4>
+                <h4 class="d-none d-md-block"><span class="badge text-bg-dark">Produtos</span></h4>
                 <div class="d-flex gap-2">
                     <a href="{{ route('products.create') }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus me-2"></i>Novo produto</a>
                     <form action="{{ route('products.index') }}" method="GET" class="d-flex gap-2">

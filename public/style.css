@@ -30,6 +30,14 @@ main{
   font-size: 18px;
   background: transparent;
 }
+.swiper-slide:hover{
+  
+}
+.carousel-indicators [data-bs-target]{
+  width: 2rem !important;
+  height: 0.4rem !important;
+  background-color: grey !important;
+}
 
 @media (max-width: 760px) {
   .swiper-button-next {

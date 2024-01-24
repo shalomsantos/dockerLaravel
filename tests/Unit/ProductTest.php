@@ -3,18 +3,19 @@
 namespace Tests\Unit;
 
 use App\Models\Product;
+use App\Repository\ProductRespository;
 use PHPUnit\Framework\TestCase;
 
 class ProductTest extends TestCase
 {
     /**
-     * A basic unit test example.
+     * @test
      */
-    public function test_example(): void
+    public function check_column_product_is_correct(): void
     {
+        
         $product = new Product();
-
-        $expected = [
+            $expected = [
             'nome',
             'categoria',
             'valor',

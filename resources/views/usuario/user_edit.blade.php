@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container py-4">
-        <form action="{{ route('users.update', ['user' => $user->id]) }}" method="post" class="card p-3 col-6">
+        <form action="{{ route('users.update', ['user' => $user->id]) }}" method="post" class="card p-3 col-12 col-md-6">
             @csrf
             <input type="hidden" name="_method" value="PUT">
             <div class="row">
