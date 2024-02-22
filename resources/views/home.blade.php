@@ -43,10 +43,10 @@
     </div>
     <div class="container py-3">
         <div class="swiper">
-            <div class="swiper-wrapper" style="height: 100 !important;">
+            <div class="swiper-wrapper">
                 @foreach ($products as $product)
                     <div class="swiper-slide">
-                        <div class="card m-2 p-3" style="height: 400px;">
+                        <div class="card m-2 p-3" style="height: 420px;">
                             <img src="{{ $product->path }}" alt="" width="100%" height="150">
                             <div class="card-body p-0 d-flex flex-column justify-content-between">
                                 <h4 class="card-title">{{ $product->nome }}</h4>

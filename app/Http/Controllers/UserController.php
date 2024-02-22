@@ -43,9 +43,9 @@ class UserController extends Controller
         ]);
         
         if($userCreate){
-            return redirect('users')->with('message', 'successfully created');
+            return redirect('users')->with('message', 'Usuário cadastrado com sucesso.');
         }
-        return redirect('users')->with('message', 'error created');   
+        return redirect('users')->with('message', 'Erro ao cadastrar novo usuário.');   
     }
 
     public function show($user)

@@ -41,11 +41,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/about') }}">Sobre</a>
                     </li>
+                    <a class="btn btn-outline-dark border-0" href="{{ url('/login') }}">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
                 </ul>
             </div>
-            <a class="btn btn-outline-primary rounded-3" href="#">
-                <i class="fa-solid fa-right-to-bracket px-3"></i>
-            </a>
         </div>
     </nav>
     

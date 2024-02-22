@@ -4,7 +4,7 @@
     @if (session()->has('message'))
         <div id="modal" class="modal d-block" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+                <div class="modal-content shadow-lg">
                     <div class="modal-header">
                         <h5 class="modal-title">Status:.</h5>
                         <button type="button" class="btn-close" onclick="modalClose()"></button>
