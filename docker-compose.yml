@@ -62,8 +62,10 @@ services:
         platform: linux/x86_64
         restart: unless-stopped
         environment:
-            - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
-            - MYSQL_CONNECTION=${DB_CONNECTION}
+            MYSQL_DATABASE: basicus
+            MYSQL_USER: shalom
+            MYSQL_PASSWORD: shalom123
+            MYSQL_ROOT_PASSWORD: shalom321
         volumes:
             - ./:/var/www
             - ./.docker/mysql/dbdata:/var/lib/mysql
